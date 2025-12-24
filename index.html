@@ -1,10 +1,456 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>My GitHub Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PB Academia - Excellence in Education</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <h1>Hello World 🌍</h1>
-  <p>My first GitHub Pages website!</p>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">PB Academia</span>
+            </div>
+            <nav class="nav-actions">
+                <button id="backBtn" class="back-btn" style="display: none;">
+                    <span>←</span> Back to Home
+                </button>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="mainContent">
+        <!-- Home Section -->
+        <section id="home" class="section-home">
+            <!-- Hero -->
+            <div class="hero">
+                <div class="container hero-content">
+                    <h1 class="hero-title">
+                        Empowering Students to<br>
+                        <span class="gradient-text">Excel & Achieve</span>
+                    </h1>
+                    <p class="hero-description">
+                        Professional coaching for SSC, HSC, and University Admission with personalized attention and
+                        proven results
+                    </p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary">Start Learning Today</button>
+                        <button id="exploreBtn" class="btn btn-secondary">Explore Courses</button>
+                    </div>
+                    <div class="scroll-indicator">
+                        <div class="scroll-mouse"></div>
+                        <span>Scroll to explore</span>
+                    </div>
+                </div>
+                <div class="hero-background">
+                    <div class="gradient-orb orb-1"></div>
+                    <div class="gradient-orb orb-2"></div>
+                    <div class="gradient-orb orb-3"></div>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-section">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">500<span>+</span></div>
+                            <div class="stat-label">Students Enrolled</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Expert Teachers</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Courses Section -->
+            <div class="courses-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Our <span class="gradient-text">Courses</span></h2>
+                        <p class="section-subtitle">Choose your path to success with our specialized programs</p>
+                    </div>
+                    <div class="courses-grid">
+                        <div class="course-card" data-course="ssc">
+                            <div class="course-icon">📖</div>
+                            <h3 class="course-title">SSC Preparation</h3>
+                            <p class="course-desc">Comprehensive foundation building with focus on board exam excellence
+                            </p>
+                            <ul class="course-features">
+                                <li>✓ All subjects covered</li>
+                                <li>✓ Weekly mock tests</li>
+                                <li>✓ Personal mentorship</li>
+                            </ul>
+                            <button class="course-btn">View Details →</button>
+                            <div class="course-glow"></div>
+                        </div>
+                        <div class="course-card featured" data-course="admission">
+                            <div class="featured-badge">Most Popular</div>
+                            <div class="course-icon">🎓</div>
+                            <h3 class="course-title">Admission Care</h3>
+                            <p class="course-desc">Targeted coaching for medical, engineering, and university admissions
+                            </p>
+                            <ul class="course-features">
+                                <li>✓ MCQ mastery techniques</li>
+                                <li>✓ Previous year analysis</li>
+                                <li>✓ Interview preparation</li>
+                            </ul>
+                            <button class="course-btn">View Details →</button>
+                            <div class="course-glow"></div>
+                        </div>
+                        <div class="course-card" data-course="hsc">
+                            <div class="course-icon">🎯</div>
+                            <h3 class="course-title">HSC Preparation</h3>
+                            <p class="course-desc">Advanced learning with strategic preparation for higher secondary
+                                excellence</p>
+                            <ul class="course-features">
+                                <li>✓ Subject specialists</li>
+                                <li>✓ Advanced problem solving</li>
+                                <li>✓ University prep included</li>
+                            </ul>
+                            <button class="course-btn">View Details →</button>
+                            <div class="course-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Teachers Section -->
+            <div class="teachers-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Meet Our <span class="gradient-text">Expert Teachers</span></h2>
+                        <p class="section-subtitle">Learn from experienced educators dedicated to your success</p>
+                    </div>
+                    <div class="teachers-grid">
+                        <div class="teacher-card">
+                            <div class="teacher-avatar">
+                                <div class="avatar-placeholder"><img src="assets/images/levi.png" alt="Sohayel Mahmud"
+                                        class="teacher-img">
+                                </div>
+                            </div>
+                            <h3 class="teacher-name">Sohayel Mahmud</h3>
+                            <p class="teacher-subject">Physics & Mathematics</p>
+                            <p class="teacher-exp">12+ years experience</p>
+                        </div>
+                        <div class="teacher-card">
+                            <div class="teacher-avatar">
+                                <div class="avatar-placeholder"><img src="assets/images/my-avatar1.png"
+                                        alt="Farzaad Sarwar" class="teacher-img"></div>
+                            </div>
+                            <h3 class="teacher-name">Farzaad Sarwar</h3>
+                            <p class="teacher-subject">Chemistry & Biology</p>
+                            <p class="teacher-exp">10+ years experience</p>
+                        </div>
+                        <div class="teacher-card">
+                            <div class="teacher-avatar">
+                                <div class="avatar-placeholder"><img src="assets/images/levi.png" alt="Sayem Ahnaf"
+                                        class="teacher-img">
+                                </div>
+                            </div>
+                            <h3 class="teacher-name">Sayem Ahnaf</h3>
+                            <p class="teacher-subject">English & Bangla</p>
+                            <p class="teacher-exp">15+ years experience</p>
+                        </div>
+                        <div class="teacher-card">
+                            <div class="teacher-avatar">
+                                <div class="avatar-placeholder"><img src="assets/images/my-avatar1.png"
+                                        alt="Jahin Ishraq" class="teacher-img"></div>
+                            </div>
+                            <h3 class="teacher-name">Jahin Ishraq</h3>
+                            <p class="teacher-subject">Mathematics</p>
+                            <p class="teacher-exp">8+ years experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Detail Sections -->
+        <section id="ssc" class="section-detail" style="display: none;">
+            <div class="container">
+                <div class="detail-hero">
+                    <div class="detail-icon">📖</div>
+                    <h1 class="detail-title">SSC Preparation Program</h1>
+                    <p class="detail-subtitle">Building strong foundations for academic excellence</p>
+                </div>
+                <div class="detail-content">
+                    <div class="detail-grid">
+                        <div class="detail-card">
+                            <h3>📚 Course Structure</h3>
+                            <p>Comprehensive coverage of all SSC subjects with emphasis on conceptual clarity and
+                                problem-solving skills.</p>
+                            <ul>
+                                <li>Mathematics - Algebra, Geometry, Trigonometry</li>
+                                <li>Sciences - Physics, Chemistry, Biology</li>
+                                <li>Languages - English, Bangla</li>
+                                <li>Social Studies - Bangladesh & Global Studies</li>
+                            </ul>
+                        </div>
+                        <div class="detail-card">
+                            <h3>⏰ Schedule</h3>
+                            <p>Flexible class timings designed for student convenience:</p>
+                            <ul>
+                                <li>Morning Batch: 8:00 AM - 11:00 AM</li>
+                                <li>Afternoon Batch: 2:00 PM - 5:00 PM</li>
+                                <li>Evening Batch: 5:30 PM - 8:30 PM</li>
+                                <li>Weekend Special Classes Available</li>
+                            </ul>
+                        </div>
+                        <div class="detail-card">
+                            <h3>💰 Fees Structure</h3>
+                            <p>Affordable pricing with quality education:</p>
+                            <ul>
+                                <li>Monthly Fee: 3,000 BDT</li>
+                                <li>Quarterly Package: 8,000 BDT (Save 1,000 BDT)</li>
+                                <li>Full Year: 30,000 BDT (Save 6,000 BDT)</li>
+                                <li>Sibling Discount: 10% off</li>
+                            </ul>
+                        </div>
+                        <div class="detail-card">
+                            <h3>🎯 Key Features</h3>
+                            <ul>
+                                <li>Small batch sizes (15-20 students)</li>
+                                <li>Weekly tests and assessments</li>
+                                <li>Doubt clearing sessions</li>
+                                <li>Study materials provided</li>
+                                <li>Parent-teacher meetings</li>
+                                <li>Online resources access</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hsc" class="section-detail" style="display: none;">
+            <div class="container">
+                <div class="detail-hero">
+                    <div class="detail-icon">🎯</div>
+                    <h1 class="detail-title">HSC Preparation Program</h1>
+                    <p class="detail-subtitle">Advanced learning for higher secondary success</p>
+                </div>
+                <div class="detail-content">
+                    <div class="detail-grid">
+                        <div class="detail-card">
+                            <h3>📚 Course Structure</h3>
+                            <p>Specialized coaching for Science, Commerce, and Arts streams with university preparation.
+                            </p>
+                            <ul>
+                                <li>Science: Physics, Chemistry, Biology, Higher Math</li>
+                                <li>Commerce: Accounting, Business, Economics</li>
+                                <li>Arts: Bangla, English, Social Science</li>
+                                <li>Common Subjects: ICT, Bangla, English</li>
+                            </ul>
+                        </div>
+                        <div class="detail-card">
+                            <h3>⏰ Schedule</h3>
+                            <p>Intensive preparation schedule:</p>
+                            <ul>
+                                <li>Science Stream: 9:00 AM - 1:00 PM</li>
+                                <li>Commerce Stream: 2:00 PM - 6:00 PM</li>
+                                <li>Arts Stream: 3:00 PM - 7:00 PM</li>
+                                <li>Special Weekend Workshops</li>
+                            </ul>
+                        </div>
+                        <div class="detail-card">
+                            <h3>💰 Fees Structure</h3>
+                            <p>Competitive pricing for quality education:</p>
+                            <ul>
+                                <li>Monthly Fee: 5,000 BDT</li>
+                                <li>Quarterly Package: 14,000 BDT (Save 1,000 BDT)</li>
+                                <li>Full Year: 50,000 BDT (Save 10,000 BDT)</li>
+                                <li>Subject-wise coaching available</li>
+                            </ul>
+                        </div>
+                        <div class="detail-card">
+                            <h3>🎯 Key Features</h3>
+                            <ul>
+                                <li>Subject specialist teachers</li>
+                                <li>Advanced problem-solving techniques</li>
+                                <li>Regular model tests</li>
+                                <li>University admission prep included</li>
+                                <li>Career counseling sessions</li>
+                                <li>Digital learning resources</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="admission" class="section-detail" style="display: none;">
+            <div class="container">
+                <div class="detail-hero">
+                    <div class="detail-icon">🎓</div>
+                    <h1 class="detail-title">Admission Care Program</h1>
+                    <p class="detail-subtitle">Your gateway to top universities</p>
+                </div>
+                <div class="detail-content">
+                    <div class="detail-grid">
+                        <div class="detail-card">
+                            <h3>📚 Course Structure</h3>
+                            <p>Specialized preparation for medical, engineering, and university entrance exams.</p>
+                            <ul>
+                                <li>Medical Admission (MBBS, BDS, etc.)</li>
+                                <li>Engineering Admission (BUET, CUET, etc.)</li>
+                                <li>University Admission (DU, JU, CU, etc.)</li>
+                                <li>Subject-specific MCQ practice</li>
+                            </ul>
+                        </div>
+                        <div class="detail-card">
+                            <h3>⏰ Schedule</h3>
+                            <p>Focused exam preparation schedule:</p>
+                            <ul>
+                                <li>Medical Batch: 8:00 AM - 12:00 PM</li>
+                                <li>Engineering Batch: 1:00 PM - 5:00 PM</li>
+                                <li>University Batch: 5:30 PM - 9:30 PM</li>
+                                <li>Daily mock tests and analysis</li>
+                            </ul>
+                        </div>
+                        <div class="detail-card">
+                            <h3>💰 Fees Structure</h3>
+                            <p>Investment in your future:</p>
+                            <ul>
+                                <li>Monthly Fee: 6,000 BDT</li>
+                                <li>3 Months: 17,000 BDT (Save 1,000 BDT)</li>
+                                <li>6 Months: 32,000 BDT (Save 4,000 BDT)</li>
+                                <li>Crash Course: 15,000 BDT (2 months)</li>
+                            </ul>
+                        </div>
+                        <div class="detail-card">
+                            <h3>🎯 Key Features</h3>
+                            <ul>
+                                <li>Previous year question analysis</li>
+                                <li>MCQ solving strategies</li>
+                                <li>Time management techniques</li>
+                                <li>Daily practice tests</li>
+                                <li>Performance tracking</li>
+                                <li>Interview preparation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">PB Academia</h3>
+                    <p>Excellence in education since 1971</p>
+                    <div class="social-list">
+                        <div class="social-item">
+                            <a href="https://www.facebook.com/profile.php?id=61584555539761" target="_blank"
+                                rel="noopener noreferrer" class="social-link">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul class="contacts-list">
+
+                        <li class="contact-item">
+
+                            <div class="icon-box">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+
+                            <div class="contact-info">
+                                <a href="mailto:pbacademia25@gmail.com" class="contact-link">pbacademia25@gmail.com</a>
+                            </div>
+
+                        </li>
+
+                        <li class="contact-item">
+
+                            <div class="icon-box">
+                                <ion-icon name="phone-portrait-outline"></ion-icon>
+                            </div>
+
+                            <div class="contact-info">
+                                <a href="tel:+8801784-323041" class="contact-link">+880 1784 323041</a>
+                            </div>
+
+                        </li>
+
+                        <li class="contact-item">
+
+                            <div class="icon-box">
+                                <ion-icon name="location-outline"></ion-icon>
+                            </div>
+
+                            <div class="contact-info">
+                                <address>12 Green Corner (Opposite of Immanuel Baptist Church), Dhaka, Bangladesh
+                                </address>
+                            </div>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#ssc">SSC</a>
+                    <a href="#hsc">HSC</a>
+                    <a href="#admission">Admission</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Location</h4>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.3701257121285!2d90.38334467590832!3d23.734171889417838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8eb9346513d%3A0x67137a1c312788e0!2sDhaka%20College!5e0!3m2!1sen!2sbd!4v1710000000000!5m2!1sen!2sbd"
+                            width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 PB Academia. All rights reserved. Designed with ❤️ by <a
+                        href="https://www.sohayelmahmud.github.io" target="_blank" rel="noopener noreferrer">Sohayel
+                        Mahmud</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/8801234567890" class="whatsapp-btn" target="_blank" aria-label="Contact on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+            class="whatsapp-icon-svg">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
